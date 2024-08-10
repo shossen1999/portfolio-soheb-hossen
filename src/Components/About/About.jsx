@@ -14,7 +14,7 @@ const About = () => {
     return (
         <div className=" py-4 bg-white" >
             <Helmet>
-                <title>About | Hafsa_Rashid</title>
+                <title>About | Soheb Hossen</title>
             </Helmet>
             
             <div className='App '>
