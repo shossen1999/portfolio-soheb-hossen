@@ -1,4 +1,4 @@
-
+import EduFusion from '../../assets/EduFusion.png'
 import APIS from '../../assets/Alternative Product.png';
 import journeyjunction from '../../assets/journeyjunction.png';
 import nestopia from '../../assets/nestopia.png';
@@ -43,6 +43,15 @@ const Projects = () => {
                 </div>
                 {/* <h1 className="mb-16 py-8 text-4xl font-medium text-center text-[#548AA3]">___My Projects___</h1> */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-10" data-aos="fade-left">
+                <div
+                        className="relative  h-60 shadow-2xl bg-cover bg-center cursor-pointer"
+                        style={{ backgroundImage: `url(${EduFusion})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                        onClick={() => openModal('modal_EduFusion')}
+                    >
+                        <div className="absolute inset-0 bg-[#548AA3] bg-opacity-90 flex items-center justify-center opacity-0 transition-opacity duration-500 hover:opacity-100">
+                            <div className="text-white text-2xl font-bold">EduFusion</div>
+                        </div>
+                    </div>
                     <div
                         className="relative  h-60 shadow-2xl bg-cover bg-center cursor-pointer"
                         style={{ backgroundImage: `url(${APIS})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
@@ -61,7 +70,7 @@ const Projects = () => {
                             <div className="text-white text-2xl font-bold">Journey Junction</div>
                         </div>
                     </div>
-                    <div
+                    {/* <div
                         className="relative  h-60 shadow-2xl bg-cover bg-center cursor-pointer"
                         style={{ backgroundImage: `url(${nestopia})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                         onClick={() => openModal('modal_nestopia')}
@@ -69,13 +78,46 @@ const Projects = () => {
                         <div className="absolute inset-0 bg-[#548AA3] bg-opacity-90 flex items-center justify-center opacity-0 transition-opacity duration-500 hover:opacity-100">
                             <div className="text-white text-2xl font-bold">Nestopia</div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 {/* <div className="flex justify-center mt-8">
                 
             </div> */}
 
                 {/* Modals */}
+                <dialog id="modal_EduFusion" className="modal">
+                    <div className="modal-box w-full max-w-4xl">
+                        <form method="dialog">
+                            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                        </form>
+                        <h3 className="font-bold text-lg">EduFusion</h3>
+                        <ul className="list-disc list-inside py-2">
+                            <li><a href="https://edu-fusion-ab009.web.app/" target="_blank" className="text-blue-500">Live URL</a></li>
+                            <li><a href="https://github.com/shossen1999/EduFusion-Client" target="_blank" className="text-blue-500">Client Code</a></li>
+                            <li><a href="https://github.com/shossen1999/EduFusion-Server" target="_blank" className="text-blue-500">Server Code</a></li>
+                        </ul>
+                        <p className="py-4">
+                        EduFusion is an all-in-one educational platform designed to provide a dynamic learning and teaching environment.
+                        </p>
+                        <h4 className="font-bold text-md">Key Concepts</h4>
+                        <p className="py-2">
+                        EduFusion is an educational platform where students can enroll in classes or request to become teachers (admin-approved); approved teachers can upload classes (admin-reviewed) and manage assignments, while admins oversee approvals and platform activity
+                        </p>
+                        <h4 className="font-bold text-md">Major Features</h4>
+                        <ul className="list-disc list-inside py-2">
+                            <li>Role-Based Access & Authentication:Secure login/signup (Google + JWT), student-to-teacher transition (admin-approved), and dynamic UI (navbar/profile based on role).</li>
+                            <li>Class & Learning Management: Teachers create admin-approved classes/assignments; students enroll, submit work, and track progress via dedicated dashboards.</li>
+                            <li>Admin Oversight & Platform Control: Admins approve/reject classes & teachers, manage users, and monitor platform activity for quality and security.</li>
+                        </ul>
+                        <h4 className="font-bold text-md">Technologies Used</h4>
+                        <ul className="list-disc list-inside py-2">
+                            <li>Frontend: HTML, Tailwind CSS, React.js, JavaScript,Tanstack Query, JWT implementation</li>
+                            <li>Backend: Node.js with Express.js, MongoDB, and middleware </li>
+                            <li>Integration: Social login integration using Google and GitHub OAuth for seamless user authentication.</li>
+                        </ul>
+                    </div>
+                </dialog>
+
                 <dialog id="modal_APIS" className="modal">
                     <div className="modal-box w-full max-w-4xl">
                         <form method="dialog">
@@ -146,7 +188,7 @@ const Projects = () => {
                     </div>
                 </dialog>
 
-                <dialog id="modal_nestopia" className="modal">
+                {/* <dialog id="modal_nestopia" className="modal">
                     <div className="modal-box w-full max-w-4xl">
                         <form method="dialog">
                             <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
@@ -172,7 +214,7 @@ const Projects = () => {
                             
                         </ul>
                     </div>
-                </dialog>
+                </dialog> */}
             </div>
         </div>
     );
