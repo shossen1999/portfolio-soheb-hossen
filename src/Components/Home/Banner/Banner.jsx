@@ -6,7 +6,7 @@ import banner from '../../../assets/finish.png';
 import { GoDownload } from "react-icons/go";
 import { FaChevronCircleRight } from "react-icons/fa";
 
-import resume from "../../../assets/resume1.pdf"
+import resume from "../../../assets/SohebResume.pdf"
 
 const Banner = () => {
   
@@ -21,7 +21,7 @@ const Banner = () => {
             <div className='md:flex justify-between'>
                 <div className='w-[60%] lg:w-[50%] px-3 md:p-8 lg:p-20 pt-4 md:pt-10 lg:mt-16 '>
                     <h1 className='text-2xl md:text-3xl lg:text-5xl font-bold pb-2 text-black'>
-                        I'm <span className='text-[#548AA3]'>Soheb Hossen</span>
+                        I'm <span className='text-[#548AA3]'>Md. Soheb Hossen</span>
                     </h1>
                     <p className='text-[#548AA3] text-[16px] md:text-xl pb-4 font-medium'>Web Developer</p>
                     <p className='pb-4 text-[10px] md:text-[16px]'>

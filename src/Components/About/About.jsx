@@ -39,7 +39,7 @@ const About = () => {
                     <h1 className="text-2xl font-semibold pb-8">Personal Information</h1>
                     <div className="flex items-center gap-4">
                     <LuCornerDownRight className='text-[#548AA3] text-2xl'/>
-                    <p className="text-xl  py-2">Name: Soheb Hossen</p>
+                    <p className="text-xl  py-2">Name:Md. Soheb Hossen</p>
 
                     </div>
                     <div className="flex items-center gap-4 ">
@@ -81,7 +81,7 @@ const About = () => {
                             <p className="pl-16 text-[#548AA3]">2020-Present</p>
                             <p className="pl-16">Computer Science & Engineering:  University of Barishal</p>
                             <p className="pl-16">Expected Graduation: 2025</p>
-                            <p className="pl-16">Current CGPA- 3.43</p>
+                            <p className="pl-16">Current CGPA- 3.45</p>
                             </li>
                         <li>
                             <div className="flex">
@@ -90,7 +90,7 @@ const About = () => {
                             </div>
                             <p className="pl-16 text-[#548AA3]">2019</p>
                             <p className="pl-16">Higher Secondary:  BCIC College</p>
-                            <p className="pl-16">GPA- 4.81</p>
+                            <p className="pl-16">GPA- 4.25</p>
                             </li>
                             <li>
                             <div className="flex">
