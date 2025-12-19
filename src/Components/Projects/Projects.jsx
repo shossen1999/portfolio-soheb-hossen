@@ -1,7 +1,8 @@
 import EduFusion from '../../assets/EduFusion.png'
 import APIS from '../../assets/Alternative Product.png';
 import journeyjunction from '../../assets/journeyjunction.png';
-import nestopia from '../../assets/nestopia.png';
+import nestopia from '../../assets/EduFusion.png';
+import pawpalace from '../../assets/PetMarket.png';
 import banner from '../../assets/bg.jpg'
 import { Helmet } from 'react-helmet-async';
 import { Typewriter } from 'react-simple-typewriter';
@@ -43,7 +44,16 @@ const Projects = () => {
                 </div>
                 {/* <h1 className="mb-16 py-8 text-4xl font-medium text-center text-[#548AA3]">___My Projects___</h1> */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-10" data-aos="fade-left">
-                <div
+                    <div
+                        className="relative  h-60 shadow-2xl bg-cover bg-center cursor-pointer"
+                        style={{ backgroundImage: `url(${pawpalace})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                        onClick={() => openModal('modal_PawPalace')}
+                    >
+                        <div className="absolute inset-0 bg-[#548AA3] bg-opacity-90 flex items-center justify-center opacity-0 transition-opacity duration-500 hover:opacity-100">
+                            <div className="text-white text-2xl font-bold">PetMarket</div>
+                        </div>
+                    </div>
+                    <div
                         className="relative  h-60 shadow-2xl bg-cover bg-center cursor-pointer"
                         style={{ backgroundImage: `url(${EduFusion})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                         onClick={() => openModal('modal_EduFusion')}
@@ -61,15 +71,7 @@ const Projects = () => {
                             <div className="text-white text-2xl font-bold">Alternative Product Information System</div>
                         </div>
                     </div>
-                    <div
-                        className="relative  h-60 shadow-2xl bg-cover bg-center cursor-pointer"
-                        style={{ backgroundImage: `url(${journeyjunction})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-                        onClick={() => openModal('modal_journeyjunction')}
-                    >
-                        <div className="absolute inset-0 bg-[#548AA3] bg-opacity-90 flex items-center justify-center opacity-0 transition-opacity duration-500 hover:opacity-100">
-                            <div className="text-white text-2xl font-bold">Journey Junction</div>
-                        </div>
-                    </div>
+                    
                     {/* <div
                         className="relative  h-60 shadow-2xl bg-cover bg-center cursor-pointer"
                         style={{ backgroundImage: `url(${nestopia})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
@@ -83,6 +85,36 @@ const Projects = () => {
                 {/* <div className="flex justify-center mt-8">
                 
             </div> */}
+                <dialog id="modal_PawPalace" className="modal">
+                    <div className="modal-box w-full max-w-4xl">
+                        <form method="dialog">
+                            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                        </form>
+                        <h3 className="font-bold text-lg">Pet Market </h3>
+                        <ul className="list-disc list-inside py-2">
+                            <li><a href="https://paw-palace-4dac4.web.app/" target="_blank" className="text-blue-500">Live URL</a></li>
+                            <li><a href="https://github.com/shossen1999/PawPalace-Client" target="_blank" className="text-blue-500">Client Code</a></li>
+                            <li><a href="https://github.com/shossen1999/PawPalace-Server" target="_blank" className="text-blue-500">Server Code</a></li>
+                        </ul>
+                        
+                        <h4 className="font-bold text-md">Key Concepts</h4>
+                        <p className="py-2">
+                            PetMarket is a platform with two types of users: admins and regular users. Users can add pets, which require admin approval before being listed. Pets can be donated or sold, and users can open donation campaigns for their own pets. The system can send reminders to adopters or buyers before a pet's vaccination date .
+                        </p>
+                        <h4 className="font-bold text-md">Major Features</h4>
+                        <ul className="list-disc list-inside py-2">
+                            <li>Pet Adoption & Listing System: Users can browse pets by category, view detailed pet profiles, and submit adoption requests. Pets added by users require admin approval before being listed.</li>
+                            <li>Donation Campaigns with Secure Payments:   Users can create donation campaigns for their pets and accept donations through **Stripe**. Campaigns include detailed information and recommended campaigns for better engagement.</li>
+                            <li>Role-Based Dashboards & Management: Separate dashboards for **users** and **admins** allow efficient management of pets, adoption requests, campaigns, users, and donations with full role-based access control.</li>
+                        </ul>
+                        <h4 className="font-bold text-md">Technologies Used</h4>
+                        <ul className="list-disc list-inside py-2">
+                            <li>Frontend: HTML, Tailwind CSS, React.js, JavaScript,Tanstack Query, JWT implementation</li>
+                            <li>Backend: Node.js with Express.js, MongoDB, and middleware </li>
+                            <li>Integration: Social login integration using Google and GitHub OAuth for seamless user authentication.</li>
+                        </ul>
+                    </div>
+                </dialog>
 
                 {/* Modals */}
                 <dialog id="modal_EduFusion" className="modal">
@@ -97,11 +129,11 @@ const Projects = () => {
                             <li><a href="https://github.com/shossen1999/EduFusion-Server" target="_blank" className="text-blue-500">Server Code</a></li>
                         </ul>
                         <p className="py-4">
-                        EduFusion is an all-in-one educational platform designed to provide a dynamic learning and teaching environment.
+                            EduFusion is an all-in-one educational platform designed to provide a dynamic learning and teaching environment.
                         </p>
                         <h4 className="font-bold text-md">Key Concepts</h4>
                         <p className="py-2">
-                        EduFusion is an educational platform where students can enroll in classes or request to become teachers (admin-approved); approved teachers can upload classes (admin-reviewed) and manage assignments, while admins oversee approvals and platform activity
+                            EduFusion is an educational platform where students can enroll in classes or request to become teachers (admin-approved); approved teachers can upload classes (admin-reviewed) and manage assignments, while admins oversee approvals and platform activity
                         </p>
                         <h4 className="font-bold text-md">Major Features</h4>
                         <ul className="list-disc list-inside py-2">
@@ -151,42 +183,7 @@ const Projects = () => {
                     </div>
                 </dialog>
 
-                <dialog id="modal_journeyjunction" className="modal">
-                    <div className="modal-box w-full max-w-4xl">
-                        <form method="dialog">
-                            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-                        </form>
-                        <h3 className="font-bold text-lg">Journey Junction</h3>
-                        <ul className="list-disc list-inside py-2">
-                            <li><a href=" https://journey-junction-b03c2.web.app/" target="_blank" className="text-blue-500">Live URL</a></li>
-                            <li><a href="https://github.com/shossen1999/Journey-Junction-client" target="_blank" className="text-blue-500">Client Code</a></li>
-                            <li><a href="https://github.com/shossen1999/Journey-Junction-server" target="_blank" className="text-blue-500">Server Code</a></li>
-                        </ul>
-                        <p className="py-4">
-                            The main motive of the site described  is to create a specialized tourism management website focused on a specific geographical region. The user must choose one category (such as Southeast Asia, Europe, etc.) and build a website that showcases various tourist spots within the countries of that selected region.
-                        </p>
-                        <h4 className="font-bold text-md">Key and Concepts</h4>
-                        <p className="py-2">
-                            The key concept of the site is to create a specialized tourism management platform that allows users to explore, manage, and interact with detailed information about tourist spots within a selected geographical region. The site focuses on providing a comprehensive and personalized experience, where users can Explore Tourist Spots,User Management,Responsive and Interactive Design
-                            ,Data Specificity.The concept revolves around creating an organized, user-friendly platform for managing and showcasing tourism-related information within a focused regional context.
-                        </p>
-                        <h4 className="font-bold text-md">Key Features</h4>
-                        <ul className="list-disc list-inside py-2">
-                            <li>User Authentication and Interaction: It offers a seamless user experience with authentication features like login, register, and personalized profiles, allowing users to add, update, and delete tourist spots based on their preferences.</li>
-                            <li>Dynamic Content Presentation: It presents dynamic content such as sliders showcasing tourist attractions, cards displaying tourist spots, and dropdown menus for sorting based on average cost, enhancing user engagement and navigation.</li>
-                            <li>Add Tourist Spot : In this section i kept a route where user can add spot if he/she login to the site.</li>
-                            <li>CRUD Operations and Database Integration: It integrates CRUD operations to manage tourist spot data efficiently, allowing users to add, view, update, and delete tourist spots while ensuring data integrity and security through database integration.</li>
-                            <li>Review Section : In this section , we kept all the review been published by the user .</li>
-                        </ul>
-                        <h4 className="font-bold text-md">Technologies Used</h4>
-                        <ul className="list-disc list-inside py-2">
-                            <li>Frontend: HTML, CSS, JavaScript, React.js, Tailwind CSS</li>
-                            <li>Backend: Node.js, Express.js, MongoDB</li>
-                            <li>Authentication: Firebase, JWT</li>
-                            <li>react-tooltip</li>
-                        </ul>
-                    </div>
-                </dialog>
+                
 
                 {/* <dialog id="modal_nestopia" className="modal">
                     <div className="modal-box w-full max-w-4xl">
