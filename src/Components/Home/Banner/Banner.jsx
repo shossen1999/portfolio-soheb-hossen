@@ -6,7 +6,7 @@ import banner from '../../../assets/finish.png';
 import { GoDownload } from "react-icons/go";
 import { FaChevronCircleRight } from "react-icons/fa";
 
-import resume from "../../../assets/Soheb_Resume1.pdf"
+import resume from "../../../assets/Soheb_Resume2.pdf"
 
 const Banner = () => {
   
