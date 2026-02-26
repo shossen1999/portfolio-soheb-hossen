@@ -80,25 +80,25 @@ const About = () => {
                             </div>
                             <p className="pl-16 text-[#548AA3]">2020-2025</p>
                             <p className="pl-16">Computer Science & Engineering:  University of Barishal</p>
-                            <p className="pl-16">Expected Graduation: 2025</p>
-                            <p className="pl-16">Current CGPA- 3.49</p>
+                          
+                            <p className="pl-16"> CGPA- 3.49</p>
                             </li>
                         <li>
                             <div className="flex">
                             <FaGraduationCap className="text-5xl text-[#548AA3]" />
                             <p>___________________</p>
                             </div>
-                            <p className="pl-16 text-[#548AA3]">2019</p>
-                            <p className="pl-16">Higher Secondary:  BCIC College</p>
-                            <p className="pl-16">GPA- 4.25</p>
+                            <p className="pl-16 text-[#548AA3]">2017</p>
+                            <p className="pl-16">Secondary:  Kalir Bazar MR High School</p>
+                            <p className="pl-16">GPA- 5.00</p>
                             </li>
                             <li>
                             <div className="flex">
                             <FaGraduationCap className="text-5xl text-[#548AA3]" />
                             <p>___________________</p>
                             </div>
-                            <p className="pl-16 text-[#548AA3]">2017</p>
-                            <p className="pl-16">Secondary:  Kalir Bazar MR High School</p>
+                            <p className="pl-16 text-[#548AA3]">2019</p>
+                            <p className="pl-16">Higher Secondary:BCIC College</p>
                             <p className="pl-16">GPA- 5.00</p>
                             </li>
                         </ul>
