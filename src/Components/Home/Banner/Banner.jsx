@@ -24,7 +24,7 @@ const Banner = () => {
                         I'm <span className='text-[#548AA3]'>Md. Soheb Hossen</span>
                     </h1>
                     <p className='text-[#548AA3] text-[16px] md:text-xl pb-4 font-medium'>Web Developer</p>
-                    <p className='pb-4 text-[10px] md:text-[16px]'>
+                    <p className='pb-4 text-white text-[10px] md:text-[16px]'>
                         Junior Web Developer with hands-on experience build
                         ing full-stack MERN applications using React, Node.js,
                         Express.js, and MongoDB. Skilled in developing respon
