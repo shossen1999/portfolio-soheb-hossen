@@ -78,10 +78,10 @@ const About = () => {
                             <PiGraduationCap className="text-5xl" />
                             <p>___________________</p>
                             </div>
-                            <p className="pl-16 text-[#548AA3]">2020-Present</p>
+                            <p className="pl-16 text-[#548AA3]">2020-2025</p>
                             <p className="pl-16">Computer Science & Engineering:  University of Barishal</p>
                             <p className="pl-16">Expected Graduation: 2025</p>
-                            <p className="pl-16">Current CGPA- 3.45</p>
+                            <p className="pl-16">Current CGPA- 3.49</p>
                             </li>
                         <li>
                             <div className="flex">

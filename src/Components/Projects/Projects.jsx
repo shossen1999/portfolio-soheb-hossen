@@ -82,9 +82,7 @@ const Projects = () => {
                         </div>
                     </div> */}
                 </div>
-                {/* <div className="flex justify-center mt-8">
-                
-            </div> */}
+               
                 <dialog id="modal_PawPalace" className="modal">
                     <div className="modal-box w-full max-w-4xl">
                         <form method="dialog">

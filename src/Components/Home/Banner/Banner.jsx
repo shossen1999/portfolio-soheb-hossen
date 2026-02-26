@@ -2,14 +2,14 @@
 
 
 import { NavLink } from 'react-router-dom';
-import banner from '../../../assets/finish.png';
+import banner from '../../../assets/ban7.png';
 import { GoDownload } from "react-icons/go";
 import { FaChevronCircleRight } from "react-icons/fa";
 
-import resume from "../../../assets/Soheb_Resume2.pdf"
+import resume from "../../../assets/Soheb_Web_Developer.pdf"
 
 const Banner = () => {
-  
+
 
     return (
         <div className="lg:h-[570px]" style={{
@@ -25,16 +25,22 @@ const Banner = () => {
                     </h1>
                     <p className='text-[#548AA3] text-[16px] md:text-xl pb-4 font-medium'>Web Developer</p>
                     <p className='pb-4 text-[10px] md:text-[16px]'>
-                    I am a web developer passionate about frontend development, skilled in React, Tailwind CSS, Express, MongoDB, Node.js, and the MERN stack. Pursuing Computer Science, I seek internships or entry-level roles to apply and enhance my skills, contributing to impactful tech projects.
+                        Junior Web Developer with hands-on experience build
+                        ing full-stack MERN applications using React, Node.js,
+                        Express.js, and MongoDB. Skilled in developing respon
+                        sive UIs, RESTful APIs, authentication systems, and role
+                        based access control. Motivated to continuously learn,
+                        improve technical skills, and contribute effectively within
+                        a collaborative development team
                     </p>
 
                     <div className='lg:flex gap-8'>
-                    <a href={resume} download="Resume">
-        <button className='text-[12px] md:text-[16px] px-4 md:py-1 lg:py-2 border-2 border-[#548AA3] text-[#548AA3] bg-white font-medium hover:bg-[#548AA3] hover:text-white flex items-center mb-2 gap-2'>
-          Download Resume <GoDownload />
-        </button>
-      </a>
-                        
+                        <a href={resume} download="Resume">
+                            <button className='text-[12px] md:text-[16px] px-4 md:py-1 lg:py-2 border-2 border-[#548AA3] text-[#548AA3] bg-white font-medium hover:bg-[#548AA3] hover:text-white flex items-center mb-2 gap-2'>
+                                Download Resume <GoDownload />
+                            </button>
+                        </a>
+
                         {/* <NavLink>
                             onClick={handleFileDownload}
                             <button className='text-[12px] md:text-[16px] px-4 md:py-1 lg:py-2 border-2 border-[#548AA3] text-[#548AA3] bg-white font-medium hover:bg-[#548AA3] hover:text-white flex items-center mb-2 gap-2' >
