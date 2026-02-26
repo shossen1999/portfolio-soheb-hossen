@@ -99,7 +99,7 @@ const About = () => {
                             </div>
                             <p className="pl-16 text-[#548AA3]">2019</p>
                             <p className="pl-16">Higher Secondary:BCIC College</p>
-                            <p className="pl-16">GPA- 5.00</p>
+                            <p className="pl-16">GPA- 4.25</p>
                             </li>
                         </ul>
                 </div>
