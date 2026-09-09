@@ -6,7 +6,7 @@ import banner from '../../../assets/ban7.png';
 import { GoDownload } from "react-icons/go";
 import { FaChevronCircleRight } from "react-icons/fa";
 
-import resume from "../../../assets/Soheb_Web_Developer.pdf"
+import resume from "../../../assets/Soheb_Hossen_IT_Executive.pdf"
 
 const Banner = () => {
 
@@ -23,15 +23,9 @@ const Banner = () => {
                     <h1 className='text-2xl md:text-3xl lg:text-5xl font-bold pb-2 text-black'>
                         I'm <span className='text-[#548AA3]'>Md. Soheb Hossen</span>
                     </h1>
-                    <p className='text-[#548AA3] text-[16px] md:text-xl pb-4 font-medium'>Web Developer</p>
+                    <p className='text-[#548AA3] text-[16px] md:text-xl pb-4 font-medium'>IT Executive | ERP & Business Applications</p>
                     <p className='pb-4 text-white text-[10px] md:text-[16px]'>
-                        Junior Web Developer with hands-on experience build
-                        ing full-stack MERN applications using React, Node.js,
-                        Express.js, and MongoDB. Skilled in developing respon
-                        sive UIs, RESTful APIs, authentication systems, and role
-                        based access control. Motivated to continuously learn,
-                        improve technical skills, and contribute effectively within
-                        a collaborative development team
+                        Computer Science \& Engineering graduate with hands-on experience in ERP configuration, business process mapping, IT support, system testing, and user assistance. Currently working as an Executive in IT \& Support Services at Process IT Limited, supporting Odoo Business Management Software and client business operations. Experienced in system configuration, troubleshooting, user support, business workflow analysis, and ERP modules including Sales, Purchase, Inventory, Accounting, and POS,  with additional full-stack development experience using the MERN stack.
                     </p>
 
                     <div className='lg:flex gap-8'>
