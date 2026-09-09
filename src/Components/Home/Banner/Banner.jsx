@@ -25,7 +25,7 @@ const Banner = () => {
                     </h1>
                     <p className='text-[#548AA3] text-[16px] md:text-xl pb-4 font-medium'>IT Executive | ERP & Business Applications</p>
                     <p className='pb-4 text-white text-[10px] md:text-[16px]'>
-                        Computer Science \& Engineering graduate with hands-on experience in ERP configuration, business process mapping, IT support, system testing, and user assistance. Currently working as an Executive in IT \& Support Services at Process IT Limited, supporting Odoo Business Management Software and client business operations. Experienced in system configuration, troubleshooting, user support, business workflow analysis, and ERP modules including Sales, Purchase, Inventory, Accounting, and POS,  with additional full-stack development experience using the MERN stack.
+                        Computer Science & Engineering graduate with hands-on experience in ERP configuration, business process mapping, IT support, system testing, and user assistance. Currently working as an Executive in IT & Support Services at Process IT Limited, supporting Odoo Business Management Software and client business operations. Experienced in system configuration, troubleshooting, user support, business workflow analysis, and ERP modules including Sales, Purchase, Inventory, Accounting, and POS,  with additional full-stack development experience using the MERN stack.
                     </p>
 
                     <div className='lg:flex gap-8'>
