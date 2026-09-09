@@ -25,7 +25,7 @@ const Banner = () => {
                     </h1>
                     <p className='text-[#548AA3] text-[16px] md:text-xl pb-4 font-medium'> Full Stack Web Developer</p>
                     <p className='pb-4 text-white text-[10px] md:text-[16px]'>
-                         Computer Science \& Engineering graduate with hands-on experience in full-stack web development using React, Node.js, Express.js, and MongoDB. Experienced in developing responsive web applications, RESTful APIs, authentication systems, role-based access control, and database-driven applications. Currently working in IT \& Support Services with practical experience in business software, system configuration, troubleshooting, and ERP workflows.
+                         Computer Science & Engineering graduate with hands-on experience in full-stack web development using React, Node.js, Express.js, and MongoDB. Experienced in developing responsive web applications, RESTful APIs, authentication systems, role-based access control, and database-driven applications. Currently working in IT & Support Services with practical experience in business software, system configuration, troubleshooting, and ERP workflows.
                     </p>
 
                     <div className='lg:flex gap-8'>
